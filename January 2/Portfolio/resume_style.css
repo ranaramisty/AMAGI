@@ -1,0 +1,50 @@
+body {
+    background-image:url("bg-image.jpg");
+    background-size: cover;
+}
+
+.top {
+    padding-top: 3em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 1em;
+}
+
+#image {
+    float: left;
+    height: 25%;
+    width: 25%;
+    padding-left: 50pt;
+    border-radius: 25%;
+}
+
+.body {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+    background-color: transparent;
+    margin-left: 420pt;
+    margin-right: 50px;
+}
+
+h2 {
+    font-style: italic;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: purple;
+}

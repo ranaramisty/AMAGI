@@ -75,25 +75,20 @@ body {
     transition-delay: 680ms, 500ms;
 }
 
-.typo span:nth-child(12) {
-    transition-delay: 520ms, 650ms;
-}
-
 #image {
     float: left;
     height: 25%;
     width: 25%;
-    padding-left: 50pt;
-    border-radius: 25%;
+    border-radius: 50%;
+    margin-left: 4%;
 }
 
 .body {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 1%;
     text-align: left;
     background-color: transparent;
-    margin-left: 420pt;
-    margin-right: 50px;
+    margin-left: 31%;
+    margin-right: 4%;
 }
 
 h2 {
@@ -101,16 +96,16 @@ h2 {
 }
 
 a:link {
-    color: #5d4157;
+    color: #114357;;
     font-weight: bold;
 }
 
 a:visited {
-    color: red;
+    color: #5d4157
 }
 
 a:hover {
-    color: blue;
+    color: #f29492;
 }
 
 a:active {

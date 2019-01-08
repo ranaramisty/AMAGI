@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <!-- <script>
+            alert(`From head: ` + document.body);
+        </script> -->
+    </head>
+    <body>
+        <!-- <script>
+            alert(`From body: ` + document.body);
+        </script> -->
+
+        <!-- <div id='begin'>Begin</div>
+        <ul>
+            <li>Information</li>
+        </ul>
+        <div id='end'>End</div> -->
+
+        <!-- <script>
+            for(let mc = 0; mc < document.body.childNodes.length; mc++){
+                alert(document.body.childNodes[mc]);
+            }
+        </script> -->
+
+        <!-- <script>
+            let x = document.getElementById(`begin`);
+            x.style.background = `pink`;
+            let y = document.getElementById(`end`);
+            y.style.background = `yellow`;
+        </script> -->
+        
+        <script>
+            let rmv = (r) => {
+                r.innerHTML="";
+            }   
+
+            let x = document.createElement("div");
+            x.className = `Haluuuu`;
+            x.innerHTML = `<em>Congratulations!</em>`;
+            document.body.appendChild(x);      
+
+            rmv(x);
+        </script>
+    </body>
+</html>

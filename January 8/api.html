@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="load('https://amagi.io/assets/images/AmagiAcademyOG.png')">LOAD</button>
+        <button onclick="load('https://amagi.io/assets/images/AmagiAcademyOG.pngas')">LOAD 404</button>
+
+        <script>
+            // const load = (add) => {
+            //     let xhr = new XMLHttpRequest();
+            //     xhr.open(`GET`, add);
+            //     xhr.timeout = 1000;
+            //     xhr.send();
+            
+            //     xhr.onload = (e) =>  {
+            //         alert(`Loaded: ${this.status} ${this.responseText}`);
+            //     }
+
+            //     xhr.onerror = (e) => {
+            //         alert(`Error!`);
+            //     }
+
+            //     xhr.ontimeout = (e) => {
+            //         alert(`Timeout!`);
+            //     }
+            // } 
+            const load = (url) => {
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', url);
+                xhr.timeout = 1000;
+                xhr.send();
+
+                xhr.onload = function(e) {
+                alert(`Loaded: ${this.status} ${this.responseText}`);
+                };
+
+                xhr.onerror = (e) => alert('Error');
+
+                xhr.ontimeout = (e) => alert('Timeout!');
+	        }
+        </script>
+    </body>
+</html>

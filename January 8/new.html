@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Do you see me?</h1>
+
+        <script>
+            fetch('http://api.open-notify.org/astros.json') //getting the source
+            .then(response => response.json())
+            .then(data => alert(JSON.stringify(data))) //read
+            .catch(error => alert(`Error!`)); //notify if there is any error
+        </script>
+    </body>
+</html>

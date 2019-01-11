@@ -1,0 +1,87 @@
+<html>
+    <head>
+    </head>
+    <body>
+
+        <!-- <form id="numForm" action="" method="POST"> 1st exercise
+            First Number:<input id="firstNum" type="number"><br>
+            Second Number:<input id="secondNum" type="number"><br>
+            <input id="submitBtn" type="button" value="Submit">
+        </form> -->
+        <!-- <script> 
+            submitBtn.onclick = () => {
+                let fn = document.getElementById("firstNum").value;
+                let sn = document.getElementById("secondNum").value;
+                
+                if(fn>sn){
+                    document.write(`First number: ${fn} is greater than second number: ${sn}.`);
+                }
+                else{
+                    document.write(`Second number: ${sn} is greater than first number: ${fn}.`);
+                }
+            }
+        </script> -->
+
+
+        <!-- <form id="numForm" action="" method="POST"> 2nd exercise
+            First Number:<input id="firstNum" type="number"><br>
+            Second Number:<input id="secondNum" type="number"><br>
+            Second Number:<input id="thirdNum" type="number"><br>
+            <input id="submitBtn" type="button" value="Submit">
+        </form>
+        <script>
+            submitBtn.onclick = () => {
+                let fn = document.getElementById("firstNum").value;
+                let sn = document.getElementById("secondNum").value;
+                let tn = document.getElementById("thirdNum").value;
+
+                if(fn<0||sn<0||tn<0){
+                    document.write(`The sign is negative (-).`);
+                }
+            }    
+        </script> -->
+
+
+        <form id="numForm" action="" method="POST"> 
+            First Number:<input id="firstNum" type="number"><br>
+            Second Number:<input id="secondNum" type="number"><br>
+            Second Number:<input id="thirdNum" type="number"><br>
+            <input id="submitBtn" type="button" value="Submit">
+        </form>
+        <script>
+            submitBtn.onclick = () => {
+            let fn = document.getElementById("firstNum").value;
+            let sn = document.getElementById("secondNum").value;
+            let tn = document.getElementById("thirdNum").value;
+
+                if(fn>sn && fn>tn){
+                    if(sn>tn){
+                        alert(`${fn} ${sn} ${tn}`);
+                    }
+                    else{
+                        alert(`${fn} ${tn} ${sn}`)
+                    }
+                }
+
+                else if(sn>fn && sn>tn){
+                    if(fn>tn){
+                        alert(`${sn} ${fn} ${tn}`);
+                    }
+                    else{
+                        alert(`${sn} ${tn} ${fn}`)
+                    }
+                }
+
+                else if(tn>fn && tn>sn){
+                    if(fn>sn){
+                        alert(`${tn} ${fn} ${sn}`);
+                    }
+                    else{
+                        alert(`${tn} ${sn} ${fn}`)
+                    }
+                }
+                fn.value="";
+            }
+        </script>
+    </body>
+</html>

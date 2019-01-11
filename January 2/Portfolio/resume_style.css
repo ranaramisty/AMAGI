@@ -111,3 +111,12 @@ a:hover {
 a:active {
     color: purple;
 }
+
+@media (max-width:555px){
+    .typo{
+        font-size: 1rem;
+    }
+    .body{
+        font-size: 1rem;
+    }
+}

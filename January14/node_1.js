@@ -9,17 +9,17 @@
 // console.log(process.cpuUsage());
 // console.log(process.argv);
 
-const http=require('http');
-const hostName='localhost';
-const port=3000;
-const server=http.createServer((req, res)=>{
-    console.log(req.headers);
-    res.writeHead(200,{
-        "Content-Type":"text/html"
-    })
-    res.write(`what`);
-})
+// const http=require('http');
+// const hostName='localhost';
+// const port=3000;
+// const server=http.createServer((req, res)=>{
+//     console.log(req.headers);
+//     res.writeHead(200,{
+//         "Content-Type":"text/html"
+//     })
+//     res.write(`what`);
+// })
 
-server.listen(port,hostName,()=>{
-    console.log(`Check http://${hostName}:${port}`);
-})
+// server.listen(port,hostName,()=>{
+//     console.log(`Check http://${hostName}:${port}`);
+// })

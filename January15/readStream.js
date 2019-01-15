@@ -1,19 +1,18 @@
 const fs=require(`fs`);
 let data="Haluuu";
 
-let writerStream = fs.createWriteStream('text.txt');
+let writerStream = fs.createWriteStream('readStream.txt');
 writerStream.write(data, 'utf8');
 writerStream.end();
 
 //finish event
-const finishHandler = ()=>{
+writerStream.on('finish',()=>{
     console.log(`Hey, I'm finished!`);
-}
+})
 
 //error event
-const errorHandler = (err)=>{
+writerStream.on('error',(err)=>{
     throw err;
-}
+})
 
-writerStream.on('finish', finishHandler).on('error', errorHandler);
 console.log(`Complete!`);

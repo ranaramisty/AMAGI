@@ -9,7 +9,7 @@ body {
     background-color: #191970;
     color: #FFFF;
     font-family: "Helvetica Neue", sans-serif;
-    font-weight: 300;
+    font-weight: 300    ;
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
@@ -96,12 +96,12 @@ h2 {
 }
 
 a:link {
-    color: #114357;;
+    color: #114357;
     font-weight: bold;
 }
 
 a:visited {
-    color: #5d4157
+    color: #5d4157;
 }
 
 a:hover {
